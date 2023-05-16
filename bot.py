@@ -3,7 +3,8 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import settings
 
 
-logging.basicConfig(filename="bot.log", level=logging.INFO)
+logging.basicConfig(filename="bot.log", level=logging.INFO,
+                    format="%(asctime)s %(levelname)s %(message)s")
 
 
 def greet_user(update, context):
